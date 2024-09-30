@@ -15,7 +15,7 @@ export default function Cadastro() {
             "senha": senha,
             }
 
-        const url = 'http://localhost:2008/cadastro';
+        const url = 'http://localhost:2008/cadastro/';
         let resp = await axios.post(url, paramCorpo);
 
         alert('Pessoa adicionada ao alert. Id: ' + resp.data.novoId);
